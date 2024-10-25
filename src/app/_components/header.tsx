@@ -46,18 +46,22 @@ export default function Header() {
               <details className="dropdown dropdown-right">
                 <summary className="m-1 text-black">Services</summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg">
-                  <li><Link href={"/"}>Electrician</Link></li>
-                  <li><Link href={"/"}>Air Conditioning</Link></li>
-                  <li><Link href={"/"}>Heating</Link></li>
-                  <li><Link href={"/"}>Generator Systems & Service</Link></li>
-                  <li><Link href={"/"}>Construction</Link></li>
+                  <li><Link href={"/electrician"}>Electrician</Link></li>
+                  <li><Link href={"/air-conditioning"}>Air Conditioning</Link></li>
+                  <li><Link href={"/heating"}>Heating</Link></li>
+                  <li><Link href={"/generator-systems-and-service"}>Generator Systems & Service</Link></li>
+                  <li><Link href={"/construction"}>Construction</Link></li>
                 </ul>
               </details>
             </li>
 
             <li>
               <details className="dropdown dropdown-right">
-                <summary className="m-1 text-black">EV Charging</summary>
+                <summary className="m-1 text-black">
+                  <Link href={"/ev-charging"}>
+                  EV Charging
+                  </Link>
+                  </summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg">
                   <li><Link href={"/ev-charging-faq"}>EV Home Charging FAQ</Link></li>
                 </ul>
@@ -76,17 +80,17 @@ export default function Header() {
             </li>
 
             <li className="text-black">
-              <Link href={"/"}>
+              <Link href={"/contact-us"}>
               Contact Us
               </Link>
               </li>
             <li className="text-black">
-              <Link href={"/"}>
+              <Link href={"/promotions"}>
               Promotions
               </Link>
               </li>
             <li className="text-black">
-              <Link href={"/"}>
+              <Link href={"/articles"}>
               Articles
               </Link>
               </li>
