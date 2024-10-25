@@ -95,7 +95,7 @@ export default function Header() {
       </div>
 
       <div className="navbar-center">
-        <a className="btn btn-ghost sm:text-xl  text-secondary">Brilliant Home Services</a>
+        <a className="btn btn-ghost sm:text-xl text-secondary">Brilliant Home Services</a>
       </div>
 
       <div className="navbar-end">
