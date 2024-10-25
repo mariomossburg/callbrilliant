@@ -62,7 +62,7 @@ export default function RootLayout({
       >
 
         <Header />
-        <div className="min-h-screen pt-20">{children}</div>
+        <div className="min-h-screen pt-20 ">{children}</div>
         <Footer />
       </body>
     </html>

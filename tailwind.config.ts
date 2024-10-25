@@ -51,7 +51,8 @@ const config: Config = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['nord', 'fantasy'],
+    themes: ['emerald'],
+    // themes: ['nord', 'fantasy', 'bumblebee', 'emerald'],
   
 
   }
