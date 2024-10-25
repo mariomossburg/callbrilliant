@@ -81,7 +81,7 @@ import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 
-export default async function Post({ params }: Params) {
+export default async function Post({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -108,13 +108,7 @@ export default async function Post({ params }: Params) {
   );
 }
 
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-export function generateMetadata({ params }: Params): Metadata {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -132,8 +126,8 @@ export function generateMetadata({ params }: Params): Metadata {
   };
 }
 
-export async function generateStaticParams() {
-  const posts = getAllPosts();
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
+  const posts = await getAllPosts();
 
   return posts.map((post) => ({
     slug: post.slug,
