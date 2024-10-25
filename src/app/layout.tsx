@@ -61,9 +61,11 @@ export default function RootLayout({
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
 
-        <Header />
-        <div className="min-h-screen pt-20 ">{children}</div>
-        <Footer />
+        <div className="max-w-full">
+          <Header />
+          <div className="min-h-screen pt-20 ">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

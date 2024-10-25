@@ -21,7 +21,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="navbar bg-base-300 shadow-lg p-3 fixed max-w-full flex">
+    <div className="navbar bg-base-300 shadow-lg p-3 fixed flex">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost text-secondary btn-circle">
@@ -95,7 +95,7 @@ export default function Header() {
       </div>
 
       <div className="navbar-center">
-        <a className="btn btn-ghost md:text-xl sm:text-md text-secondary   ">Brilliant Home Services</a>
+        <a className="btn btn-ghost sm:text-xl  text-secondary">Brilliant Home Services</a>
       </div>
 
       <div className="navbar-end">
