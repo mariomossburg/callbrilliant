@@ -265,7 +265,7 @@ export default function Navbar() {
       </div>
 
       <div className="navbar-center">
-        <a className="btn btn-ghost sm:text-xl text-secondary">Brilliant Home Services</a>
+        <a className="btn btn-ghost sm:text-xl text-base text-secondary">Brilliant Home Services</a>
       </div>
 
       <div className="navbar-end">
