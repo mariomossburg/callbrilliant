@@ -28,18 +28,24 @@ export default function Card({
         />
       </figure>
       <div className="card-body">
+        <div className="flex items-center justify-between">
         <h2 className="card-title">
           {title}
           {badgeText && <div className="badge badge-secondary">{badgeText}</div>}
         </h2>
-        <p>{description}</p>
-        <div className="card-actions justify-end">
-          <Link href={linkHref}>
+        <Link href={linkHref}>
             <button className="btn btn-primary">{buttonText}</button>
-          </Link>
+        </Link>
         </div>
+      <p>{description}</p>
       </div>
     </div>
   )
 }
 
+
+{/* <div className="card-actions justify-end">
+  <Link href={linkHref}>
+    <button className="btn btn-primary">{buttonText}</button>
+  </Link>
+</div> */}
