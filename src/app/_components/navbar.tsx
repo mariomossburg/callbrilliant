@@ -428,7 +428,7 @@ export default function Navbar() {
       </div>
 
       <div className="navbar-center">
-        <a className="btn btn-ghost sm:text-xl text-base text-secondary">Brilliant Home Services</a>
+        <Link href={'/'} className="btn btn-ghost sm:text-xl text-base text-secondary">Brilliant Home Services</Link>
       </div>
 
       <div className="navbar-end">
