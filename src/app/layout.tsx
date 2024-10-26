@@ -3,9 +3,9 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
+import Navbar from "./_components/navbar";
 
 import "./globals.css";
-import Header from "./_components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,7 +62,7 @@ export default function RootLayout({
       >
 
         <div className="max-w-full bg-base-100">
-          <Header />
+          <Navbar />
           <div className="min-h-screen pt-20 ">{children}</div>
           <Footer />
         </div>
