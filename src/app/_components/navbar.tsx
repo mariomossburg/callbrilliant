@@ -378,12 +378,12 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className={`menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-xl ${isOpen ? '' : 'hidden'}`}>
+            className={`menu menu-lg border dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-xl ${isOpen ? '' : 'hidden'}`}>
 
             <li>
               <details className={`dropdown ${getDropdownClass()}`}>
                 <summary className="m-1 text-black">Services</summary>
-                <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black">
+                <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black border">
                   <li><Link href={"/electrician"}>Electrician</Link></li>
                   <li><Link href={"/construction"}>Construction</Link></li>
                   <li><Link href={"/heating"}>Heating</Link></li>
@@ -396,7 +396,7 @@ export default function Navbar() {
             <li>
               <details className={`dropdown ${getDropdownClass()}`}>
                 <summary className="m-1 text-black">EV's</summary>
-                <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black">
+                <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black border">
                   <li><Link href={"/ev-charging"}>EV Charging</Link></li>
                   <li><Link href={"/ev-charging-faq"}>EV Home Charging FAQ</Link></li>
                 </ul>
@@ -406,7 +406,7 @@ export default function Navbar() {
             <li>
               <details className={`dropdown ${getDropdownClass()}`}>
                 <summary className="m-1 text-black">About Us</summary>
-                <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black">
+                <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black border">
                   <li><Link href={"/affiliations"}>Affiliations</Link></li>
                   <li><Link href={"/privacy-policy"}>Privacy Policy</Link></li>
                   <li><Link href={"/service-areas"}>Service Areas</Link></li>
