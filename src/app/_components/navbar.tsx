@@ -47,7 +47,7 @@ export default function Navbar() {
   };
 
   return (
-    <div ref={navRef} className="navbar bg-base-300 shadow-lg p-3 fixed flex">
+    <div ref={navRef} className="navbar bg-base-300 shadow-lg p-3 fixed flex z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost text-secondary btn-circle" onClick={toggleMenu}>
@@ -73,10 +73,10 @@ export default function Navbar() {
                 <summary className="m-1 text-black">Services</summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black">
                   <li><Link href={"/electrician"}>Electrician</Link></li>
-                  <li><Link href={"/air-conditioning"}>Air Conditioning</Link></li>
-                  <li><Link href={"/heating"}>Heating</Link></li>
-                  <li><Link href={"/generator-systems-and-service"}>Generator Systems & Service</Link></li>
                   <li><Link href={"/construction"}>Construction</Link></li>
+                  <li><Link href={"/heating"}>Heating</Link></li>
+                  <li><Link href={"/air-conditioning"}>Air Conditioning</Link></li>
+                  <li><Link href={"/generator-systems-and-service"}>Generator Systems & Service</Link></li>
                 </ul>
               </details>
             </li>
@@ -84,9 +84,10 @@ export default function Navbar() {
             <li>
               <details className="dropdown dropdown-right">
                 <summary className="m-1 text-black">
-                  <Link href={"/ev-charging"}>EV Charging</Link>
+                  EV's
                 </summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black">
+                  <li><Link href={"/ev-charging"}>EV Charging</Link></li>
                   <li><Link href={"/ev-charging-faq"}>EV Home Charging FAQ</Link></li>
                 </ul>
               </details>
@@ -97,8 +98,8 @@ export default function Navbar() {
                 <summary className="m-1 text-black">About Us</summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black">
                   <li><Link href={"/affiliations"}>Affiliations</Link></li>
-                  <li><Link href={"/service-areas"}>Service Areas</Link></li>
                   <li><Link href={"/privacy-policy"}>Privacy Policy</Link></li>
+                  <li><Link href={"/service-areas"}>Service Areas</Link></li>
                 </ul>
               </details>
             </li>
@@ -107,10 +108,10 @@ export default function Navbar() {
               <Link href={"/contact-us"}>Contact Us</Link>
             </li>
             <li className="text-black">
-              <Link href={"/promotions"}>Promotions</Link>
+              <Link href={"/articles"}>Articles</Link>
             </li>
             <li className="text-black">
-              <Link href={"/articles"}>Articles</Link>
+              <Link href={"/promotions"}>Promotions</Link>
             </li>
           </ul>
         </div>
