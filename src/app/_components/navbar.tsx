@@ -359,7 +359,7 @@ export default function Navbar() {
   };
 
   return (
-    <div ref={navRef} className="navbar bg-base-300 shadow-lg p-3 fixed flex z-50">
+    <div ref={navRef} className="navbar bg-base-300  shadow-lg p-4 fixed flex z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost text-secondary btn-circle" onClick={toggleMenu}>
