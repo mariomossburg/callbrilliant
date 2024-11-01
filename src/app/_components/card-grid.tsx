@@ -48,7 +48,7 @@ export default function ResponsiveCardGrid() {
     {
       imageSrc: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       imageAlt: "Indoor Air Quality",
-      title: "Indoor Air Quality",
+      title: "EV Charging",
       description: "Keeping your property in top shape.",
       badgeText: "24/7",
       linkHref: "/maintenance",
