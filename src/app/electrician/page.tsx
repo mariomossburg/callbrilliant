@@ -2,17 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../_components/header'
 
-export default function ServicesPage() {
+export default function Page() {
   return (
     <div className="min-h-screen bg-base-100">
       <Header 
-      title='Our Electrical Services'
+      title='Electrical Services'
       text='Licensed & experienced electricians in Chicago, IL'
       />
 
       <div className="container mx-auto px-4 py-6">
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Our Electrical Services</h2>
+          {/* <h2 className="text-2xl font-semibold mb-4">Our Electrical Services</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               "Electrical wiring and rewiring",
