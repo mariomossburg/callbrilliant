@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Header from '../_components/header'
 
-export default function PrivacyPolicyPage() {
+export default function Page() {
   return (
     <div className="min-h-screen bg-base-100">
       <Header 
