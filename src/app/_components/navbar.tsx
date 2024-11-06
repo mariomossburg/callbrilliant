@@ -362,7 +362,7 @@ export default function Navbar() {
     <div ref={navRef} className="navbar bg-base-300  shadow-lg p-4 fixed flex z-50">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost text-secondary btn-circle" onClick={toggleMenu}>
+          <div tabIndex={0} role="button" className="btn btn-ghost text-secondary btn-circle shadow-md" onClick={toggleMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7"
@@ -415,7 +415,6 @@ export default function Navbar() {
             </li>
 
 
-
             <li className="text-black">
               <Link href={"/contact-us"}>Contact Us</Link>
             </li>
@@ -430,12 +429,12 @@ export default function Navbar() {
       </div>
 
       <div className="navbar-center">
-        <Link href={'/'} className="btn btn-ghost sm:text-xl text-base text-secondary">Brilliant Home Services</Link>
+        <Link href={'/'} className="btn btn-ghost lg:text-xl md:text-xl sm:text-lg text-base text-secondary">Brilliant Home Services</Link>
       </div>
 
       <div className="navbar-end">
         <Link href="/contact-us">
-          <button className="bg-secondary text-base-100 px-4 py-2 rounded-lg shadow-xl hover:bg-base-100 hover:text-black hover:underline transform hover:scale-105 transition-transform duration-200 border-2 border-transparent hover:border-secondary">
+          <button className="bg-secondary text-base-100 px-4 py-2 md:btn-wide rounded-lg shadow-xl hover:bg-base-100 hover:text-black hover:underline transform hover:scale-105 transition-transform duration-200 border-2 border-transparent hover:border-secondary">
             Contact 
           </button>
         </Link>
