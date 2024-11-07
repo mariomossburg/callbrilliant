@@ -94,7 +94,7 @@ export default function Navbar() {
               <details className={`dropdown ${getDropdownClass()}`}>
                 <summary className="m-1 text-black">Services</summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black border">
-                  <li><Link aria-label="Electrician services" href={"/electrician"}>Electrical services</Link></li>
+                  <li><Link aria-label="Electrician services" href={"/electrician"}>Electrician</Link></li>
                   <li><Link aria-label="Construction services" href={"/construction"}>Construction</Link></li>
                   <li><Link aria-label="Heating services" href={"/heating"}>Heating</Link></li>
                   <li><Link aria-label="Air conditioning services" href={"/air-conditioning"}>Air Conditioning</Link></li>
