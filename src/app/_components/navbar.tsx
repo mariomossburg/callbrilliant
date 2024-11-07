@@ -69,7 +69,7 @@ export default function Navbar() {
   };
 
   return (
-    <div ref={navRef} className="navbar bg-base-300  shadow-lg p-4 fixed flex z-50">
+    <div ref={navRef} className="navbar bg-base-300  shadow-lg p-4 fixed flex z-50" aria-label="Main navigation">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" aria-label="Toggle navigation menu" aria-expanded={isOpen ? "true" : "false"} className="btn btn-ghost text-secondary btn-circle shadow-md" onClick={toggleMenu}>
@@ -94,11 +94,11 @@ export default function Navbar() {
               <details className={`dropdown ${getDropdownClass()}`}>
                 <summary className="m-1 text-black">Services</summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black border">
-                  <li><Link href={"/electrician"}>Electrician</Link></li>
-                  <li><Link href={"/construction"}>Construction</Link></li>
-                  <li><Link href={"/heating"}>Heating</Link></li>
-                  <li><Link href={"/air-conditioning"}>Air Conditioning</Link></li>
-                  <li><Link href={"/generator-systems-and-service"}>Generator Systems & Service</Link></li>
+                  <li><Link aria-label="Electrician services" href={"/electrician"}>Electrician</Link></li>
+                  <li><Link aria-label="Construction services" href={"/construction"}>Construction</Link></li>
+                  <li><Link aria-label="Heating services" href={"/heating"}>Heating</Link></li>
+                  <li><Link aria-label="Air conditioning services" href={"/air-conditioning"}>Air Conditioning</Link></li>
+                  <li><Link aria-label="Generator System services" href={"/generator-systems-and-service"}>Generator Systems & Service</Link></li>
                 </ul>
               </details>
             </li>
@@ -143,7 +143,7 @@ export default function Navbar() {
       </div>
 
       <div className="navbar-end">
-        <Link href="/contact-us">
+        <Link href="/contact-us" >
           <button className="bg-secondary text-base-100 px-4 py-2 md:btn-wide rounded-lg shadow-xl hover:bg-base-100 hover:text-black hover:underline transform hover:scale-105 transition-transform duration-200 border-2 border-transparent hover:border-secondary">
             Contact 
           </button>
