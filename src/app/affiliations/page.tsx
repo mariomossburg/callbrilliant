@@ -1,41 +1,23 @@
-// import Link from "next/link"
-// import Image from "next/image"
-// import Header from "../_components/header"
-
-// export default function Page() {
-//     const photo = '/assets/construction/affiliations.png'
-
-//     return (
-//         <div>
-//             <Header title="Affiliations" text="" />
-            
-//             <div className="flex justify-center">
-//                 <div className="rounded-lg overflow-hidden shadow-lg">
-//                     <Image alt="Callbriant Affiliations" src={photo} width={600} height={400} className="w-full" />
-//                 </div>
-//             </div>
-
-//             <div className="text-center my-4">
-//                 <h2 className="mb-2">Check out our esteemed affiliations:</h2>
-//                 <div className="space-x-2">
-//                     <Link href="https://barringtonchamber.com/" className="text-primary hover:underline">Barrington Chamber of Commerce</Link>
-//                     <Link href="https://www.schaumburgbusiness.com/" className="text-primary hover:underline">Schaumburg Business Association</Link>
-//                     <Link href="https://www.iaei.org/" className="text-primary hover:underline">IAEI</Link>
-//                     <Link href="https://www.angi.com/" className="text-primary hover:underline">Angi</Link>
-//                     <Link href="https://www.comed.com/" className="text-primary hover:underline">Comed</Link>
-//                     <Link href="https://www.eaton.com/us/en-us.html" className="text-primary hover:underline">EATON</Link>
-//                     <Link href="https://www.tesla.com/" className="text-primary hover:underline">Tesla</Link>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-
 
 import Image from "next/image"
 import Link from "next/link"
 import Header from "../_components/header"
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: ``,
+    description: ``,
+    
+    applicationName: 'Brilliant Home Services',
+    keywords: ["solar calculator", "solar energy savings"],
+    openGraph: {
+      images: [],
+  
+      title: ``,
+      description: ``,
+    },
+  };
 
 export default function AffiliationsPage() {
     const photo = '/assets/construction/affiliations.png'

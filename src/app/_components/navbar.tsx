@@ -117,9 +117,9 @@ export default function Navbar() {
               <details className={`dropdown ${getDropdownClass()}`}>
                 <summary className="m-1 text-black">About Us</summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg text-black border">
-                  <li><Link href={"/affiliations"}>Affiliations</Link></li>
-                  <li><Link href={"/privacy-policy"}>Privacy Policy</Link></li>
-                  <li><Link href={"/service-areas"}>Service Areas</Link></li>
+                  <li><Link href={"/about-us/affiliations"}>Affiliations</Link></li>
+                  <li><Link href={"/about-us/privacy-policy"}>Privacy Policy</Link></li>
+                  <li><Link href={"/about-us/service-areas"}>Service Areas</Link></li>
                 </ul>
               </details>
             </li>
