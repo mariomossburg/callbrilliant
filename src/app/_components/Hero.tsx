@@ -1,9 +1,14 @@
+
 export default function Hero() {
+    // const photo = '/assets/construction/construction-one.png'
+
+
+    const photo = '/assets/hero-photo/hero-photo.png'
     return (
         <div
             className="hero min-h-[50vh] rounded-xl shadow-xl "
             style={{
-                backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+                backgroundImage: '/assets/construction/hero-photo.png',
             }}>
             <div className="hero-overlay bg-opacity-60 rounded-xl"></div>
             <div className="hero-content text-neutral-content text-center">
