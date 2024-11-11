@@ -1,6 +1,6 @@
 import Card from './card'
 
-export default function ResponsiveCardGrid() {
+export default function CardGrid() {
   const services = [
     {
       imageSrc: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
