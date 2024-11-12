@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+
 export default function Hero() {
   const photo = '/assets/hero-photo/hero-photo.png'
 

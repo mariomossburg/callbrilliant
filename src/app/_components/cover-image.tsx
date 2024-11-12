@@ -7,7 +7,6 @@ type Props = {
   src: string;
   slug?: string;
 };
-
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <Image

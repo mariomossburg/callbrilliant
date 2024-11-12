@@ -6,9 +6,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: ``,
     description: ``,
-    
     applicationName: 'Brilliant Home Services',
-    keywords: ["solar calculator", "solar energy savings"],
+    keywords: [""],
     openGraph: {
       images: [],
   

@@ -3,7 +3,6 @@ import Accordion from "./_components/accordion";
 import CardGrid from "./_components/card-grid";
 
 export default function Index() {
-
   return (
     <main>
       <div className="p-4 ">
@@ -12,11 +11,9 @@ export default function Index() {
         <div className="hidden md:block">
         <CardGrid />
         </div>
-
         <div className="block md:hidden">
         <Accordion />
         </div>
-        
       </div>
     </main>
   );

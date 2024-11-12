@@ -61,7 +61,6 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
-
         <div className="max-w-full bg-base-100">
           <Navbar />
           <div className="min-h-screen pt-20 ">{children}</div>

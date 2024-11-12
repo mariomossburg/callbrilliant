@@ -4,7 +4,6 @@ interface HeaderProps {
     title: string;
     text: string;
   }
-
 const Header: React.FC<HeaderProps> = ({ title, text }) => {
   return (
     <header className="bg-primary text-primary-content py-6">

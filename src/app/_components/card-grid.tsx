@@ -3,7 +3,6 @@ import { services } from "../../lib/services";
 
 export default function CardGrid() {
 
-
   return (
     <main className="min-h-screen bg-base-100">
       <div className="mx-auto">

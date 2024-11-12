@@ -2,7 +2,6 @@ type Props = {
   name: string;
   picture: string;
 };
-
 const Avatar = ({ name, picture }: Props) => {
   return (
     <div className="flex items-center">
