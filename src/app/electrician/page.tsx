@@ -12,7 +12,6 @@ export default function Page() {
 
       <div className="container mx-auto px-4 py-6">
         <section className="mb-8">
-          {/* <h2 className="text-2xl font-semibold mb-4">Our Electrical Services</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               "Electrical wiring and rewiring",
@@ -29,7 +28,7 @@ export default function Page() {
               <div key={index}  
             className="bg-base-200 shadow rounded-lg p-4 opacity-0 transform transition-opacity duration-500 ease-in-out delay-100"
             style={{
-              animation: `fadeIn 0.5s forwards ${index * 0.1}s`, // Adds staggered delay
+              animation: `fadeIn 0.5s forwards ${index * 0.1}s`, 
             }}
           >
                 <h3 className="font-semibold flex items-center">

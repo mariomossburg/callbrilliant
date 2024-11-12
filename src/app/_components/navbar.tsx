@@ -4,19 +4,16 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [screenSize, setScreenSize] = useState(0); // Initialize to 0 or use a default value
+  const [screenSize, setScreenSize] = useState(0); 
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Function to handle window resize
     const handleResize = () => {
       setScreenSize(window.innerWidth);
     };
 
-    // Set the initial screen size on mount
     handleResize();
 
-    // Event listener for window resize
     window.addEventListener('resize', handleResize);
     
     return () => {
